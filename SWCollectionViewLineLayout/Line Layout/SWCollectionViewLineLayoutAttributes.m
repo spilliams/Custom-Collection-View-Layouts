@@ -1,13 +1,13 @@
 //
-//  SWViewController.h
+//  SWCollectionViewLineLayoutAttributes.m
 //  SWCollectionViewLineLayout
 //
 //  Created by Spencer Williams on 3/14/13.
 //  Copyright (c) 2013 spilliams. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SWCollectionViewLineLayoutAttributes.h"
 
-@interface SWViewController : UIViewController
+@implementation SWCollectionViewLineLayoutAttributes
 
 @end

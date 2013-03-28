@@ -17,10 +17,14 @@
 		0929AD9716F2895A00BD64B9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0929AD9616F2895A00BD64B9 /* Default@2x.png */; };
 		0929AD9916F2895A00BD64B9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0929AD9816F2895A00BD64B9 /* Default-568h@2x.png */; };
 		0929AD9C16F2895A00BD64B9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0929AD9A16F2895A00BD64B9 /* MainStoryboard.storyboard */; };
-		0929AD9F16F2895A00BD64B9 /* SWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0929AD9E16F2895A00BD64B9 /* SWViewController.m */; };
+		0929ADA716F2904500BD64B9 /* SWCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0929ADA616F2904500BD64B9 /* SWCollectionViewController.m */; };
+		0929ADAE16F2A24600BD64B9 /* SWCollectionViewLineLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0929ADAD16F2A24600BD64B9 /* SWCollectionViewLineLayoutAttributes.m */; };
+		0929ADB316F2A66A00BD64B9 /* SWCollectionViewLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0929ADB216F2A66900BD64B9 /* SWCollectionViewLineLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09024B391704008400591826 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		09024B3B1704008400591826 /* Documentation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Documentation.1; sourceTree = "<group>"; };
 		0929AD7F16F2895A00BD64B9 /* SWCollectionViewLineLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWCollectionViewLineLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0929AD8216F2895A00BD64B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0929AD8416F2895A00BD64B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,8 +39,12 @@
 		0929AD9616F2895A00BD64B9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0929AD9816F2895A00BD64B9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0929AD9B16F2895A00BD64B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		0929AD9D16F2895A00BD64B9 /* SWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWViewController.h; sourceTree = "<group>"; };
-		0929AD9E16F2895A00BD64B9 /* SWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWViewController.m; sourceTree = "<group>"; };
+		0929ADA516F2904500BD64B9 /* SWCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCollectionViewController.h; sourceTree = "<group>"; };
+		0929ADA616F2904500BD64B9 /* SWCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCollectionViewController.m; sourceTree = "<group>"; };
+		0929ADAC16F2A24600BD64B9 /* SWCollectionViewLineLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWCollectionViewLineLayoutAttributes.h; path = "Line Layout/SWCollectionViewLineLayoutAttributes.h"; sourceTree = "<group>"; };
+		0929ADAD16F2A24600BD64B9 /* SWCollectionViewLineLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWCollectionViewLineLayoutAttributes.m; path = "Line Layout/SWCollectionViewLineLayoutAttributes.m"; sourceTree = "<group>"; };
+		0929ADB116F2A66900BD64B9 /* SWCollectionViewLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWCollectionViewLineLayout.h; path = "Line Layout/SWCollectionViewLineLayout.h"; sourceTree = "<group>"; };
+		0929ADB216F2A66900BD64B9 /* SWCollectionViewLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWCollectionViewLineLayout.m; path = "Line Layout/SWCollectionViewLineLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +61,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09024B381704008400591826 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				09024B391704008400591826 /* main.c */,
+				09024B3B1704008400591826 /* Documentation.1 */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
 		0929AD7616F2895A00BD64B9 = {
 			isa = PBXGroup;
 			children = (
 				0929AD8816F2895A00BD64B9 /* SWCollectionViewLineLayout */,
+				09024B381704008400591826 /* Documentation */,
 				0929AD8116F2895A00BD64B9 /* Frameworks */,
 				0929AD8016F2895A00BD64B9 /* Products */,
 			);
@@ -83,11 +101,12 @@
 		0929AD8816F2895A00BD64B9 /* SWCollectionViewLineLayout */ = {
 			isa = PBXGroup;
 			children = (
+				0929ADAB16F2A21E00BD64B9 /* Line Layout */,
 				0929AD9116F2895A00BD64B9 /* SWAppDelegate.h */,
 				0929AD9216F2895A00BD64B9 /* SWAppDelegate.m */,
 				0929AD9A16F2895A00BD64B9 /* MainStoryboard.storyboard */,
-				0929AD9D16F2895A00BD64B9 /* SWViewController.h */,
-				0929AD9E16F2895A00BD64B9 /* SWViewController.m */,
+				0929ADA516F2904500BD64B9 /* SWCollectionViewController.h */,
+				0929ADA616F2904500BD64B9 /* SWCollectionViewController.m */,
 				0929AD8916F2895A00BD64B9 /* Supporting Files */,
 			);
 			path = SWCollectionViewLineLayout;
@@ -105,6 +124,17 @@
 				0929AD9816F2895A00BD64B9 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0929ADAB16F2A21E00BD64B9 /* Line Layout */ = {
+			isa = PBXGroup;
+			children = (
+				0929ADB116F2A66900BD64B9 /* SWCollectionViewLineLayout.h */,
+				0929ADB216F2A66900BD64B9 /* SWCollectionViewLineLayout.m */,
+				0929ADAC16F2A24600BD64B9 /* SWCollectionViewLineLayoutAttributes.h */,
+				0929ADAD16F2A24600BD64B9 /* SWCollectionViewLineLayoutAttributes.m */,
+			);
+			name = "Line Layout";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +206,9 @@
 			files = (
 				0929AD8F16F2895A00BD64B9 /* main.m in Sources */,
 				0929AD9316F2895A00BD64B9 /* SWAppDelegate.m in Sources */,
-				0929AD9F16F2895A00BD64B9 /* SWViewController.m in Sources */,
+				0929ADA716F2904500BD64B9 /* SWCollectionViewController.m in Sources */,
+				0929ADAE16F2A24600BD64B9 /* SWCollectionViewLineLayoutAttributes.m in Sources */,
+				0929ADB316F2A66A00BD64B9 /* SWCollectionViewLineLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +331,7 @@
 				0929ADA416F2895A00BD64B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
