@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0936F07A170616530023AC74 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0936F079170616530023AC74 /* UIKit.framework */; };
+		0936F07C170616530023AC74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0936F07B170616530023AC74 /* Foundation.framework */; };
+		0936F07E170616530023AC74 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0936F07D170616530023AC74 /* CoreGraphics.framework */; };
+		0936F084170616530023AC74 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0936F082170616530023AC74 /* InfoPlist.strings */; };
+		0936F086170616530023AC74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0936F085170616530023AC74 /* main.m */; };
+		0936F08C170616540023AC74 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0936F08B170616540023AC74 /* Default.png */; };
+		0936F08E170616540023AC74 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0936F08D170616540023AC74 /* Default@2x.png */; };
+		0936F090170616540023AC74 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0936F08F170616540023AC74 /* Default-568h@2x.png */; };
+		0936F093170616540023AC74 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0936F091170616540023AC74 /* MainStoryboard.storyboard */; };
+		0936F09E170616A60023AC74 /* SWTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0936F09D170616A60023AC74 /* SWTimelineViewController.m */; };
+		0936F0A3170616D40023AC74 /* SWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0936F0A2170616D40023AC74 /* SWAppDelegate.m */; };
+		0936F1D1170636650023AC74 /* libSWCollectionViewLineLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0936F1D0170633DC0023AC74 /* libSWCollectionViewLineLayout.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0936F1CF170633DC0023AC74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0936F10017061B050023AC74 /* SWCollectionViewLineLayout.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0936F11E17061CB10023AC74;
+			remoteInfo = SWCollectionViewLineLayout;
+		};
+		0936F1D2170636690023AC74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0936F10017061B050023AC74 /* SWCollectionViewLineLayout.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0936F11D17061CB10023AC74;
+			remoteInfo = SWCollectionViewLineLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0936F076170616530023AC74 /* TimelineExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimelineExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0936F079170616530023AC74 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0936F07B170616530023AC74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0936F07D170616530023AC74 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0936F081170616530023AC74 /* TimelineExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TimelineExample-Info.plist"; sourceTree = "<group>"; };
+		0936F083170616530023AC74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0936F085170616530023AC74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0936F087170616530023AC74 /* TimelineExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimelineExample-Prefix.pch"; sourceTree = "<group>"; };
+		0936F08B170616540023AC74 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0936F08D170616540023AC74 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0936F08F170616540023AC74 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0936F092170616540023AC74 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		0936F09C170616A60023AC74 /* SWTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWTimelineViewController.h; path = "TimelineExample/Classes/View Controllers/SWTimelineViewController.h"; sourceTree = SOURCE_ROOT; };
+		0936F09D170616A60023AC74 /* SWTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWTimelineViewController.m; path = "Classes/View Controllers/SWTimelineViewController.m"; sourceTree = "<group>"; };
+		0936F0A1170616D40023AC74 /* SWAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWAppDelegate.h; path = Classes/SWAppDelegate.h; sourceTree = "<group>"; };
+		0936F0A2170616D40023AC74 /* SWAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWAppDelegate.m; path = Classes/SWAppDelegate.m; sourceTree = "<group>"; };
+		0936F10017061B050023AC74 /* SWCollectionViewLineLayout.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SWCollectionViewLineLayout.xcodeproj; path = ../../Layouts/SWCollectionViewLineLayout/SWCollectionViewLineLayout.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0936F073170616530023AC74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0936F1D1170636650023AC74 /* libSWCollectionViewLineLayout.a in Frameworks */,
+				0936F07A170616530023AC74 /* UIKit.framework in Frameworks */,
+				0936F07C170616530023AC74 /* Foundation.framework in Frameworks */,
+				0936F07E170616530023AC74 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0936F06D170616530023AC74 = {
+			isa = PBXGroup;
+			children = (
+				0936F07F170616530023AC74 /* TimelineExample */,
+				0936F078170616530023AC74 /* Frameworks */,
+				0936F077170616530023AC74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0936F077170616530023AC74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0936F076170616530023AC74 /* TimelineExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0936F078170616530023AC74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0936F10017061B050023AC74 /* SWCollectionViewLineLayout.xcodeproj */,
+				0936F079170616530023AC74 /* UIKit.framework */,
+				0936F07B170616530023AC74 /* Foundation.framework */,
+				0936F07D170616530023AC74 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0936F07F170616530023AC74 /* TimelineExample */ = {
+			isa = PBXGroup;
+			children = (
+				0936F091170616540023AC74 /* MainStoryboard.storyboard */,
+				0936F0A1170616D40023AC74 /* SWAppDelegate.h */,
+				0936F0A2170616D40023AC74 /* SWAppDelegate.m */,
+				0936F09C170616A60023AC74 /* SWTimelineViewController.h */,
+				0936F09D170616A60023AC74 /* SWTimelineViewController.m */,
+				0936F080170616530023AC74 /* Supporting Files */,
+			);
+			path = TimelineExample;
+			sourceTree = "<group>";
+		};
+		0936F080170616530023AC74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0936F081170616530023AC74 /* TimelineExample-Info.plist */,
+				0936F082170616530023AC74 /* InfoPlist.strings */,
+				0936F085170616530023AC74 /* main.m */,
+				0936F087170616530023AC74 /* TimelineExample-Prefix.pch */,
+				0936F08B170616540023AC74 /* Default.png */,
+				0936F08D170616540023AC74 /* Default@2x.png */,
+				0936F08F170616540023AC74 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0936F10117061B050023AC74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0936F1D0170633DC0023AC74 /* libSWCollectionViewLineLayout.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0936F075170616530023AC74 /* TimelineExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0936F099170616540023AC74 /* Build configuration list for PBXNativeTarget "TimelineExample" */;
+			buildPhases = (
+				0936F072170616530023AC74 /* Sources */,
+				0936F073170616530023AC74 /* Frameworks */,
+				0936F074170616530023AC74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0936F1D3170636690023AC74 /* PBXTargetDependency */,
+			);
+			name = TimelineExample;
+			productName = TimelineExample;
+			productReference = 0936F076170616530023AC74 /* TimelineExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0936F06E170616530023AC74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SW;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = spilliams;
+			};
+			buildConfigurationList = 0936F071170616530023AC74 /* Build configuration list for PBXProject "TimelineExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0936F06D170616530023AC74;
+			productRefGroup = 0936F077170616530023AC74 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0936F10117061B050023AC74 /* Products */;
+					ProjectRef = 0936F10017061B050023AC74 /* SWCollectionViewLineLayout.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0936F075170616530023AC74 /* TimelineExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0936F1D0170633DC0023AC74 /* libSWCollectionViewLineLayout.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSWCollectionViewLineLayout.a;
+			remoteRef = 0936F1CF170633DC0023AC74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0936F074170616530023AC74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0936F084170616530023AC74 /* InfoPlist.strings in Resources */,
+				0936F08C170616540023AC74 /* Default.png in Resources */,
+				0936F08E170616540023AC74 /* Default@2x.png in Resources */,
+				0936F090170616540023AC74 /* Default-568h@2x.png in Resources */,
+				0936F093170616540023AC74 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0936F072170616530023AC74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0936F086170616530023AC74 /* main.m in Sources */,
+				0936F09E170616A60023AC74 /* SWTimelineViewController.m in Sources */,
+				0936F0A3170616D40023AC74 /* SWAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0936F1D3170636690023AC74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWCollectionViewLineLayout;
+			targetProxy = 0936F1D2170636690023AC74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0936F082170616530023AC74 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0936F083170616530023AC74 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0936F091170616540023AC74 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0936F092170616540023AC74 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0936F097170616540023AC74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0936F098170616540023AC74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0936F09A170616540023AC74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimelineExample/TimelineExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../Layouts\"/**";
+				INFOPLIST_FILE = "TimelineExample/TimelineExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0936F09B170616540023AC74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimelineExample/TimelineExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../Layouts\"/**";
+				INFOPLIST_FILE = "TimelineExample/TimelineExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0936F071170616530023AC74 /* Build configuration list for PBXProject "TimelineExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0936F097170616540023AC74 /* Debug */,
+				0936F098170616540023AC74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0936F099170616540023AC74 /* Build configuration list for PBXNativeTarget "TimelineExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0936F09A170616540023AC74 /* Debug */,
+				0936F09B170616540023AC74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0936F06E170616530023AC74 /* Project object */;
+}

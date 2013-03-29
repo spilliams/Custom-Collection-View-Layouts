@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SWCollectionViewLineLayout.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SWCollectionViewLineLayout</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SWCollectionViewLineLayout/setType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) SWCollectionViewLineLayoutType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SWCollectionViewLineLayout/type</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) SWCollectionViewLineLayoutType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
