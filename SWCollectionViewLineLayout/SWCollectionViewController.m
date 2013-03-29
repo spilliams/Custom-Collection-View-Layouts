@@ -71,4 +71,11 @@
 //- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
 //- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
 
+#pragma mark - SWollectionViewDataSourceLineLayout Protocol
+
+- (SWCollectionViewLineLayoutAttributeSide)sideForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
 @end

@@ -140,12 +140,20 @@ static NSString* const kSWDecorationViewKindLine = @"line";
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
 #warning incomplete
-    return [super layoutAttributesForElementsInRect:rect];
+    return @[];
 }
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-#warning incomplete
-    return [super layoutAttributesForItemAtIndexPath:indexPath];
+    SWCollectionViewLineLayoutAttributes *attributes = (SWCollectionViewLineLayoutAttributes *)[super layoutAttributesForItemAtIndexPath:indexPath];
+    
+    // TODO compute side in case data source doesn't specify it
+    [attributes setSide:SWCollectionViewLineLayoutAttributeSideLeft];
+    
+    if ([self.collectionView.dataSource conformsToProtocol:@protocol(SWCollectionViewDataSourceLineLayout)] &&
+        [self.collectionView.dataSource respondsToSelector:@selector(sideForItemAtIndexPath:)]) {
+        [attributes setSide:[((id<SWCollectionViewDataSourceLineLayout>)self.collectionView.dataSource) sideForItemAtIndexPath:indexPath]];
+    }
+    return attributes;
 }
 - (UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {

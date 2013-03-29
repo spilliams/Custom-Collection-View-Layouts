@@ -11,6 +11,7 @@
 typedef enum {
     SWCollectionViewLineLayoutAttributeSideLeft,
     SWCollectionViewLineLayoutAttributeSideRight,
+    SWCollectionViewLineLayoutAttributeSideBoth,
 } SWCollectionViewLineLayoutAttributeSide;
 
 NS_CLASS_AVAILABLE_IOS(6_0) @interface SWCollectionViewLineLayoutAttributes : UICollectionViewLayoutAttributes

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SWCollectionViewLineLayoutAttributes.h"
 
 /// @name Constants
 
@@ -28,6 +29,12 @@ typedef enum {
 } SWCollectionViewLineLayoutType;
 
 @protocol SWCollectionViewDelegateLineLayout <UICollectionViewDelegateFlowLayout>
+
+@end
+
+@protocol SWCollectionViewDataSourceLineLayout <UICollectionViewDataSource>
+
+- (SWCollectionViewLineLayoutAttributeSide)sideForItemAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
