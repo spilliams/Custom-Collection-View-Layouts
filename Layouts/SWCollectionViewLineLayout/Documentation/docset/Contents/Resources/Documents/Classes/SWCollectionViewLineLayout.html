@@ -27,6 +27,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -38,7 +40,19 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;type</option>
+	<option value="//api/name/arrowImage">&nbsp;&nbsp;&nbsp;&nbsp;arrowImage</option>
+	
+	<option value="//api/name/displayArrows">&nbsp;&nbsp;&nbsp;&nbsp;displayArrows</option>
+	
+	<option value="//api/name/itemSide">&nbsp;&nbsp;&nbsp;&nbsp;itemSide</option>
+	
+	<option value="//api/name/lineColor">&nbsp;&nbsp;&nbsp;&nbsp;lineColor</option>
+	
+	<option value="//api/name/lineImage">&nbsp;&nbsp;&nbsp;&nbsp;lineImage</option>
+	
+	<option value="//api/name/lineThickness">&nbsp;&nbsp;&nbsp;&nbsp;lineThickness</option>
+	
+	<option value="//api/name/maximumLineItemSpacing">&nbsp;&nbsp;&nbsp;&nbsp;maximumLineItemSpacing</option>
 	
 	
 	
@@ -53,10 +67,16 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Manipulate Item Attributes">Manipulate Item Attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Manipulate Decoration Views">Manipulate Decoration Views</a></span></li>
 	
 </ul></li>
 
@@ -66,7 +86,19 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/arrowImage">arrowImage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/displayArrows">displayArrows</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemSide">itemSide</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lineColor">lineColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lineImage">lineImage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lineThickness">lineThickness</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maximumLineItemSpacing">maximumLineItemSpacing</a></span></li>
 	
 </ul></li>
 
@@ -106,6 +138,181 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A Line Layout presents a collection of items all tied to one line that
+extends either horizontally or vertically with respect to the view. The view
+may scroll in the axial direction, but not in the other direction.</p>
+
+<h3>Layout DSL</h3>
+
+<p>A Line Layout inherits several concepts from the FLow Layout that comes with
+iOS 6.</p>
+
+<p><strong>Table 1</strong> How properties in UICollectionViewFlowLayout map to
+SWCollectionViewLineLayout</p>
+
+<table>
+<thead>
+<tr>
+<th>Property                </th>
+<th> Flow Layout                                                    </th>
+<th> Line Layout</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scrollDirection         </td>
+<td> The scroll direction of the grid.                              </td>
+<td> No change</td>
+</tr>
+<tr>
+<td>sectionInset            </td>
+<td> The margins used to lay out content in a section               </td>
+<td> No change</td>
+</tr>
+<tr>
+<td>minimumLineSpacing      </td>
+<td> The minimum spacing to use between lines of items in the grid. </td>
+<td> <strong>Not used</strong>. See below</td>
+</tr>
+<tr>
+<td>minumumInterItemSpacing </td>
+<td> The minimum spacing to use between items in the same row.      </td>
+<td> Slightly different. See below.</td>
+</tr>
+<tr>
+<td>itemSize                </td>
+<td> The default size to use for cells                              </td>
+<td> No change</td>
+</tr>
+<tr>
+<td>headerReferenceSize     </td>
+<td> The default sizes to use for section headers.                  </td>
+<td> No change</td>
+</tr>
+<tr>
+<td>footerReferenceSize     </td>
+<td> The default sizes to use for section footers.                  </td>
+<td> No change</table></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<h4>Line Spacing</h4>
+
+<p>Since there is no concept of a &ldquo;row&rdquo; in a Line Layout, there is no need for a
+<code>minimumLineSpacing</code>.</p>
+
+<h4>Item Spacing</h4>
+
+<p><code>minimumInterItemSpacing</code> represents the minimum distance between a &ldquo;grip&rdquo; and
+whatever&rsquo;s next on the line (another grip, a lineLabel, the end of the section,
+etc). Note that this retains its &ldquo;minimum&rdquo; meaning since the distance between
+two grips may be greater than this value&mdash;for instance if the first item is
+very tall, or if it spans across both sides and thus covers up the line
+entirely.</p>
+
+<p>The distance between the item and the line is derived from the view&rsquo;s size,
+the section&rsquo;s inset, and the item&rsquo;s size. If this derived value is greater than
+the <a href="#//api/name/maximumLineItemSpacing">maximumLineItemSpacing</a>, that property&rsquo;s value is instead used. Note that
+<a href="#//api/name/maximumLineItemSpacing"><code>maximumLineItemSpacing</code></a> has no effect on items with side attribute
+<code>SWCollectionViewLineLayoutAttributeSideBoth</code>.</p>
+
+<h4>Item Side</h4>
+
+<p>An item may be on the left side of the line, the right, both sides (it will be
+twice as wide as other cells), or either side—in which case the layout will
+place it into whatever side makes more sense.</p>
+
+<h3>Supplementary Views</h3>
+
+<p><strong>Table 2</strong> Line Layout Supplementary View Kinds</p>
+
+<table>
+<thead>
+<tr>
+<th>Constant                                </th>
+<th> Value           </th>
+<th> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>kSWSupplementaryViewKindItemTail</code>      </td>
+<td> &ldquo;itemTail&rdquo;      </td>
+<td> A view between the cell and the grip. Usually arrow-shaped.</td>
+</tr>
+<tr>
+<td><code>kSWSupplementaryViewKindItemGrip</code>      </td>
+<td> &ldquo;itemGrip&rdquo;      </td>
+<td> A view that appears to bind the tail to the line.</td>
+</tr>
+<tr>
+<td><code>kSWSupplementaryViewKindItemLineLabel</code> </td>
+<td> &ldquo;itemLineLabel&rdquo; </td>
+<td> A view bound to the line just above the grip.</td>
+</tr>
+<tr>
+<td><code>kSWSupplementaryViewKindSectionHeader</code> </td>
+<td> &ldquo;sectionHeader&rdquo; </td>
+<td> A section header view.</td>
+</tr>
+<tr>
+<td><code>kSWSupplementaryViewKindSectionFooter</code> </td>
+<td> &ldquo;sectionFooter&rdquo; </td>
+<td> A section footer view.</table></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>Decoration View Kinds</h3>
+
+<p>Since decoration views are managed entirely by the layout, there are no
+delegate or data source methods asking for them. Instead, the decoration views
+are manipulated via setting properties on the layout.</p>
+
+<p><strong>Table 3</strong> Line Layout Decoration View Kinds</p>
+
+<table>
+<thead>
+<tr>
+<th>Property   </th>
+<th> Default value  </th>
+<th> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#//api/name/lineImage">lineImage</a>  </td>
+<td> <code>nil</code>          </td>
+<td> The image used for the line. If nil, the decoration view is derived from the <a href="#//api/name/lineColor">lineColor</a> and <a href="#//api/name/lineThickness">lineThickness</a> properties</td>
+</tr>
+<tr>
+<td><a href="#//api/name/arrowImage">arrowImage</a> </td>
+<td> <code>nil</code>          </td>
+<td> The image used for the arrows.</td>
+</tr>
+</tbody>
+</table>
+
+					</div>
+					
+					
+					
 					
 					
 					<div class="section section-tasks">
@@ -113,14 +320,65 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						
-						
+						<a title="Manipulate Item Attributes" name="task_Manipulate Item Attributes"></a>
+						<h3 class="subsubtitle task-title">Manipulate Item Attributes</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
-		
+		<code><a href="#//api/name/itemSide">&nbsp;&nbsp;itemSide</a></code>
+		<span class="tooltip"><p>The default side to put .</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maximumLineItemSpacing">&nbsp;&nbsp;maximumLineItemSpacing</a></code>
+		<span class="tooltip"><p>The maximum amount of space between the line and an item</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Manipulate Decoration Views" name="task_Manipulate Decoration Views"></a>
+						<h3 class="subsubtitle task-title">Manipulate Decoration Views</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lineImage">&nbsp;&nbsp;lineImage</a></code>
+		<span class="tooltip"><p>The image to use for the line decoration view</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lineColor">&nbsp;&nbsp;lineColor</a></code>
+		<span class="tooltip"><p>The color to use for the line and arrows.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lineThickness">&nbsp;&nbsp;lineThickness</a></code>
+		<span class="tooltip"><p>The thickness to use for the line and arrows.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/arrowImage">&nbsp;&nbsp;arrowImage</a></code>
+		<span class="tooltip"><p>The image to use for the arrow decoration views.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/displayArrows">&nbsp;&nbsp;displayArrows</a></code>
+		<span class="tooltip"><p>Whether or not to display arrows at either end of the line to denote that
+there are items off-screen.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -138,14 +396,289 @@
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/type" title="type"></a>
-	<h3 class="subsubtitle method-title">type</h3>
+	<a name="//api/name/arrowImage" title="arrowImage"></a>
+	<h3 class="subsubtitle method-title">arrowImage</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>The image to use for the arrow decoration views.</p>
+	</div>		
+	
+    
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) SWCollectionViewLineLayoutType type</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIImage *arrowImage</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Note that this property should be set to the image for the down arrow, and the
+view for the up arrow will be derived from that.</p>
+
+<p>If <code>nil</code> and <a href="#//api/name/displayArrows">displayArrows</a> is set to <code>YES</code>, arrows will be generated from the
+<a href="#//api/name/lineColor">lineColor</a> and lineWidth properties.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SWCollectionViewLineLayout.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/displayArrows" title="displayArrows"></a>
+	<h3 class="subsubtitle method-title">displayArrows</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether or not to display arrows at either end of the line to denote that
+there are items off-screen.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL displayArrows</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SWCollectionViewLineLayout.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemSide" title="itemSide"></a>
+	<h3 class="subsubtitle method-title">itemSide</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The default side to put .</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) SWCollectionViewLineLayoutAttributeSide itemSide</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Setting this will determine which side of the line items
+are put on if the layout&rsquo;s data source does not implement
+-sideForItemAtIndexPath:</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SWCollectionViewLineLayout.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lineColor" title="lineColor"></a>
+	<h3 class="subsubtitle method-title">lineColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The color to use for the line and arrows.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIColor *lineColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Unnecessary for line if <a href="#//api/name/lineImage">lineImage</a> is not <code>nil</code>. Unnecessary for arrows if
+<a href="#//api/name/arrowImage">arrowImage</a> is not <code>nil</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SWCollectionViewLineLayout.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lineImage" title="lineImage"></a>
+	<h3 class="subsubtitle method-title">lineImage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The image to use for the line decoration view</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIImage *lineImage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If <code>nil</code>, the line is generated from the <a href="#//api/name/lineColor">lineColor</a> and lineWidth properties.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SWCollectionViewLineLayout.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lineThickness" title="lineThickness"></a>
+	<h3 class="subsubtitle method-title">lineThickness</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The thickness to use for the line and arrows.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat lineThickness</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Unnecessary for line if <a href="#//api/name/lineImage">lineImage</a> is not <code>nil</code>. Unnecessary for arrows if
+<a href="#//api/name/arrowImage">arrowImage</a> is not <code>nil</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SWCollectionViewLineLayout.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maximumLineItemSpacing" title="maximumLineItemSpacing"></a>
+	<h3 class="subsubtitle method-title">maximumLineItemSpacing</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The maximum amount of space between the line and an item</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat maximumLineItemSpacing</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SWCollectionViewLineLayout.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>

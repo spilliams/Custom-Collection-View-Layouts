@@ -24,7 +24,6 @@
 					<Path>index.html</Path>
 					<Subnodes>
 						<NodeRef refid="3"/>
-						<NodeRef refid="4"/>
 						
 					</Subnodes>
 				</Node>
@@ -47,10 +46,6 @@
 		<Node id="3">
 			<Name>SWCollectionViewDataSourceLineLayout</Name>
 			<Path>Protocols/SWCollectionViewDataSourceLineLayout.html</Path>
-		</Node>
-		<Node id="4">
-			<Name>SWCollectionViewDelegateLineLayout</Name>
-			<Path>Protocols/SWCollectionViewDelegateLineLayout.html</Path>
 		</Node>
 		
 	</Library>

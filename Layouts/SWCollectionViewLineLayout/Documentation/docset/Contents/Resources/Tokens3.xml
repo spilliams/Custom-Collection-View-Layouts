@@ -4,7 +4,9 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intf/SWCollectionViewDataSourceLineLayout</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Members conforming to this protocol are responsible for providing data on
+Line-Layout-specific data, such as &quot;which side does in item at this index path
+lie on?&quot;</Abstract>
 			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>
 			
 			<NodeRef refid="3"/>
@@ -13,12 +15,17 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SWCollectionViewDataSourceLineLayout/sideForItemAtIndexPath:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">The layout asks its data source which side of the line an item is on.</Abstract>
 			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
 			
 			<Declaration>- (SWCollectionViewLineLayoutAttributeSide)sideForItemAtIndexPath:(NSIndexPath *)indexPath</Declaration>
-			
-			
+			<Parameters>
+				<Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">The index path of the item.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The side of the line the item lies on.</Abstract></ReturnValue>
 			<Anchor>//api/name/sideForItemAtIndexPath:</Anchor>
 		</Token>
 		

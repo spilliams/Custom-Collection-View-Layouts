@@ -24,7 +24,7 @@ static NSString* const kSWDecorationViewKindLine = @"line";
 - (id)init
 {
     if (self = [super init]) {
-        [self setType:SWCollectionViewLineLayoutTypeBoth];
+        [self setItemSide:SWCollectionViewLineLayoutAttributeSideEither];
     }
     return self;
 }
@@ -147,6 +147,8 @@ static NSString* const kSWDecorationViewKindLine = @"line";
     SWCollectionViewLineLayoutAttributes *attributes = (SWCollectionViewLineLayoutAttributes *)[super layoutAttributesForItemAtIndexPath:indexPath];
     
     // TODO compute side in case data source doesn't specify it
+    SWCollectionViewLineLayoutAttributeSide viewSide = SWCollectionViewLineLayoutAttributeSideLeft;
+    SWCollectionViewLineLayoutAttributeSide attributeSide = SWCollectionViewLineLayoutAttributeSideLeft;
     [attributes setSide:SWCollectionViewLineLayoutAttributeSideLeft];
     
     if ([self.collectionView.dataSource conformsToProtocol:@protocol(SWCollectionViewDataSourceLineLayout)] &&

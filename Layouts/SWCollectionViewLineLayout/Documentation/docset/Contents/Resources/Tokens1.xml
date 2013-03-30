@@ -4,7 +4,9 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/SWCollectionViewLineLayout</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">A Line Layout presents a collection of items all tied to one line that
+extends either horizontally or vertically with respect to the view. The view
+may scroll in the axial direction, but not in the other direction.</Abstract>
 			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>
 			
 			<NodeRef refid="1"/>
@@ -12,25 +14,159 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SWCollectionViewLineLayout/setType:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/SWCollectionViewLineLayout/setItemSide:</TokenIdentifier>
+			<Abstract type="html">The default side to put .</Abstract>
 			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) SWCollectionViewLineLayoutType type</Declaration>
+			<Declaration>@property (nonatomic) SWCollectionViewLineLayoutAttributeSide itemSide</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/itemSide</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SWCollectionViewLineLayout/type</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<TokenIdentifier>//apple_ref/occ/instp/SWCollectionViewLineLayout/itemSide</TokenIdentifier>
+			<Abstract type="html">The default side to put .</Abstract>
 			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) SWCollectionViewLineLayoutType type</Declaration>
+			<Declaration>@property (nonatomic) SWCollectionViewLineLayoutAttributeSide itemSide</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/itemSide</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SWCollectionViewLineLayout/setMaximumLineItemSpacing:</TokenIdentifier>
+			<Abstract type="html">The maximum amount of space between the line and an item</Abstract>
+			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGFloat maximumLineItemSpacing</Declaration>
+			
+			
+			<Anchor>//api/name/maximumLineItemSpacing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SWCollectionViewLineLayout/maximumLineItemSpacing</TokenIdentifier>
+			<Abstract type="html">The maximum amount of space between the line and an item</Abstract>
+			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGFloat maximumLineItemSpacing</Declaration>
+			
+			
+			<Anchor>//api/name/maximumLineItemSpacing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SWCollectionViewLineLayout/setLineImage:</TokenIdentifier>
+			<Abstract type="html">The image to use for the line decoration view</Abstract>
+			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIImage *lineImage</Declaration>
+			
+			
+			<Anchor>//api/name/lineImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SWCollectionViewLineLayout/lineImage</TokenIdentifier>
+			<Abstract type="html">The image to use for the line decoration view</Abstract>
+			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIImage *lineImage</Declaration>
+			
+			
+			<Anchor>//api/name/lineImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SWCollectionViewLineLayout/setLineColor:</TokenIdentifier>
+			<Abstract type="html">The color to use for the line and arrows.</Abstract>
+			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *lineColor</Declaration>
+			
+			
+			<Anchor>//api/name/lineColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SWCollectionViewLineLayout/lineColor</TokenIdentifier>
+			<Abstract type="html">The color to use for the line and arrows.</Abstract>
+			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *lineColor</Declaration>
+			
+			
+			<Anchor>//api/name/lineColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SWCollectionViewLineLayout/setLineThickness:</TokenIdentifier>
+			<Abstract type="html">The thickness to use for the line and arrows.</Abstract>
+			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGFloat lineThickness</Declaration>
+			
+			
+			<Anchor>//api/name/lineThickness</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SWCollectionViewLineLayout/lineThickness</TokenIdentifier>
+			<Abstract type="html">The thickness to use for the line and arrows.</Abstract>
+			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGFloat lineThickness</Declaration>
+			
+			
+			<Anchor>//api/name/lineThickness</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SWCollectionViewLineLayout/setArrowImage:</TokenIdentifier>
+			<Abstract type="html">The image to use for the arrow decoration views.</Abstract>
+			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIImage *arrowImage</Declaration>
+			
+			
+			<Anchor>//api/name/arrowImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SWCollectionViewLineLayout/arrowImage</TokenIdentifier>
+			<Abstract type="html">The image to use for the arrow decoration views.</Abstract>
+			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIImage *arrowImage</Declaration>
+			
+			
+			<Anchor>//api/name/arrowImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SWCollectionViewLineLayout/setDisplayArrows:</TokenIdentifier>
+			<Abstract type="html">Whether or not to display arrows at either end of the line to denote that
+there are items off-screen.</Abstract>
+			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL displayArrows</Declaration>
+			
+			
+			<Anchor>//api/name/displayArrows</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SWCollectionViewLineLayout/displayArrows</TokenIdentifier>
+			<Abstract type="html">Whether or not to display arrows at either end of the line to denote that
+there are items off-screen.</Abstract>
+			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL displayArrows</Declaration>
+			
+			
+			<Anchor>//api/name/displayArrows</Anchor>
 		</Token>
 		
 	</File>

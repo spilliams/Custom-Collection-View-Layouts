@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "SWCollectionViewLineLayout.h"
 
-@interface SWTimelineViewController : UICollectionViewController <SWCollectionViewDataSourceLineLayout, SWCollectionViewDelegateLineLayout>
+@interface SWTimelineViewController : UICollectionViewController <SWCollectionViewDataSourceLineLayout, UICollectionViewDelegateFlowLayout>
 
 @end

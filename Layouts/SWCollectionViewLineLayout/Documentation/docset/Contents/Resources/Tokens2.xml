@@ -4,7 +4,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/SWCollectionViewLineLayoutAttributes</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">A subclass of UICollectionViewLayoutAttributes that provides extra support
+for SWCollectionViewLineLayout</Abstract>
 			<DeclaredIn>SWCollectionViewLineLayoutAttributes.h</DeclaredIn>
 			
 			<NodeRef refid="2"/>
@@ -13,7 +14,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SWCollectionViewLineLayoutAttributes/setSide:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">The side the item is on.</Abstract>
 			<DeclaredIn>SWCollectionViewLineLayoutAttributes.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic) SWCollectionViewLineLayoutAttributeSide side</Declaration>
@@ -24,7 +25,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SWCollectionViewLineLayoutAttributes/side</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">The side the item is on.</Abstract>
 			<DeclaredIn>SWCollectionViewLineLayoutAttributes.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic) SWCollectionViewLineLayoutAttributeSide side</Declaration>

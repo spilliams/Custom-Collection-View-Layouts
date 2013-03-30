@@ -27,6 +27,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -53,6 +55,8 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
@@ -106,6 +110,16 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Members conforming to this protocol are responsible for providing data on
+Line-Layout-specific data, such as &ldquo;which side does in item at this index path
+lie on?&rdquo;</p>
+					</div>
+					
+					
+					
 					
 					
 					<div class="section section-tasks">
@@ -120,10 +134,10 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sideForItemAtIndexPath:">&ndash;&nbsp;sideForItemAtIndexPath:</a></code>
-		
+		<span class="tooltip"><p>The layout asks its data source which side of the line an item is on.</p></span>
 	</span>
 	
-	<span class="task-item-suffix">required method</span>
+	
 </li>
 						</ul>
 						
@@ -146,10 +160,50 @@
 	<h3 class="subsubtitle method-title">sideForItemAtIndexPath:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>The layout asks its data source which side of the line an item is on.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (SWCollectionViewLineLayoutAttributeSide)sideForItemAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>indexPath</em></dt>
+			<dd><p>The index path of the item.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The side of the line the item lies on.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SWCollectionViewLineLayout.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>
