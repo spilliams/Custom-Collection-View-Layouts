@@ -117,7 +117,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface SWCollectionViewLineLayout : UICollection
 /// ----------------------------------------------------------------------------
 /// @name Manipulate Item Attributes
 /// ----------------------------------------------------------------------------
-/** The default side to put .
+/** The default side to put the item on.
  
  Setting this will determine which side of the line items
  are put on if the layout's data source does not implement

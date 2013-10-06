@@ -15,7 +15,7 @@ may scroll in the axial direction, but not in the other direction.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SWCollectionViewLineLayout/setItemSide:</TokenIdentifier>
-			<Abstract type="html">The default side to put .</Abstract>
+			<Abstract type="html">The default side to put the item on.</Abstract>
 			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic) SWCollectionViewLineLayoutAttributeSide itemSide</Declaration>
@@ -26,7 +26,7 @@ may scroll in the axial direction, but not in the other direction.</Abstract>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SWCollectionViewLineLayout/itemSide</TokenIdentifier>
-			<Abstract type="html">The default side to put .</Abstract>
+			<Abstract type="html">The default side to put the item on.</Abstract>
 			<DeclaredIn>SWCollectionViewLineLayout.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic) SWCollectionViewLineLayoutAttributeSide itemSide</Declaration>

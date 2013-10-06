@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
 Path: /Users/spencer/Library/Developer/Shared/Documentation/DocSets/com.spilliams.SWCollectionViewLineLayout.docset
-Time: 2013-03-30 00:31:23 +0000
+Time: 2013-03-31 18:52:22 +0000
